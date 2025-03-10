@@ -1,3 +1,8 @@
+## Ejecutar en Binder
+Haz clic en el siguiente botón para ejecutar el notebook en un entorno interactivo:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://hub.2i2c.mybinder.org/user/vincesmandres-pruebatecnica-jjsx8zef/doc/workspaces/auto-n/tree/Reto_Tecnico.ipynb)
+
 # Reto de Minería
 
 Este proyecto presenta una simulación para calcular la cantidad de **mineral valioso** extraído a partir de datos aleatorios. El objetivo es ayudar a estimar la producción minera considerando factores como tonelaje extraído, ley de cabeza, dilución y recuperación metalúrgica.
