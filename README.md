@@ -3,69 +3,77 @@ Haz clic en el siguiente botón para ejecutar el notebook en un entorno interact
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.2i2c.mybinder.org/user/vincesmandres-pruebatecnica-jjsx8zef/doc/workspaces/auto-n/tree/Reto_Tecnico.ipynb)
 
-# Reto de Minería
+# Reto de Geología, Minería y Metalurgia
 
-Este proyecto presenta una simulación para calcular la cantidad de **mineral valioso** extraído a partir de datos aleatorios. El objetivo es ayudar a estimar la producción minera considerando factores como tonelaje extraído, ley de cabeza, dilución y recuperación metalúrgica.
+Este proyecto presenta tres simulaciones independientes que abordan diferentes aspectos en el contexto de la industria minera y metalúrgica. Cada uno de estos retos permite realizar cálculos técnicos y visualizar los resultados de forma clara e interactiva.
 
-## Características Principales
-- ✅ Cálculo preciso de mineral valioso en kilogramos.
-- ✅ Validación de entradas para evitar valores negativos.
-- ✅ Simulación aleatoria de condiciones mineras en 5 bloques.
-- ✅ Fórmula basada en principios metalúrgicos reales.
+## Descripción del Proyecto
+El notebook **`Reto_Tecnico.ipynb`** contiene tres secciones principales:
 
-## Instalación
-1. Clona el repositorio:
+### ✅ Reto de Geología
+- Simulación de análisis de muestras geológicas para identificar la composición mineral.
+- Visualización de datos geológicos en gráficos claros e interpretables.
 
-```bash
-git clone https://github.com/vincesmandres/PruebaTecnica.git
-cd PruebaTecnica
-```
+### ✅ Reto de Minería
+- Estimación de la cantidad de mineral valioso extraído según tonelaje, ley de corte y factores técnicos.
+- Visualización gráfica de la producción minera para facilitar el análisis.
 
-2. Instala las dependencias necesarias (en caso de haberlas):
-
-```bash
-pip install -r requirements.txt
-```
-
-## Uso
-1. Abre el notebook `Reto_Tecnico.ipynb` en Jupyter Notebook o en cualquier entorno compatible.
-2. Ejecuta las celdas para visualizar la simulación de extracción minera.
-
-### Ejemplo de Código
-
-```python
-import random
-
-def calcular_mineral_valioso(tonelaje_extraido, ley_cabeza, dilucion, recuperacion):
-    """
-    Calcula la cantidad de mineral valioso extraído en kilogramos.
-    """
-    if any(param < 0 for param in [tonelaje_extraido, ley_cabeza, dilucion, recuperacion]):
-        raise ValueError("Los valores no pueden ser negativos.")
-
-    # Cálculo del mineral valioso
-    ley_cabeza /= 100
-    dilucion /= 100
-    recuperacion /= 100
-
-    mineral_valioso = tonelaje_extraido * (1 - dilucion) * ley_cabeza * recuperacion * 1000
-    
-    return round(mineral_valioso, 2)
-```
+### ✅ Reto de Metalurgia
+- Simulación del proceso metalúrgico para optimizar la recuperación del mineral valioso.
+- Cálculo de eficiencia del proceso considerando parámetros técnicos.
 
 ## Tecnologías Utilizadas
-- Python 3.x
-- Jupyter Notebook
+Este proyecto está desarrollado en **Python** y utiliza las siguientes bibliotecas:
 
-## Contribución
-Las contribuciones son bienvenidas. Para colaborar:
-1. Realiza un fork del repositorio.
-2. Crea una rama con tu nueva funcionalidad (`git checkout -b nueva-funcionalidad`).
-3. Realiza un commit con tus cambios (`git commit -m 'Agrega nueva funcionalidad'`).
-4. Envía un Pull Request.
+- **NumPy**: Para el manejo de datos numéricos y cálculos.
+- **Matplotlib**: Para la visualización gráfica de los resultados.
 
-## Licencia
-Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más información.
+## Requisitos
+Asegúrate de tener las siguientes dependencias instaladas si deseas ejecutar el proyecto localmente:
+
+```
+numpy
+matplotlib
+```
+
+Si deseas ejecutarlo en Binder, no necesitas instalar nada.
+
+## Ejecución en Binder
+Para ejecutar el notebook de forma interactiva en Binder, haz clic en el siguiente botón:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://hub.2i2c.mybinder.org/user/vincesmandres-pruebatecnica-jjsx8zef/doc/workspaces/auto-n/tree/Reto_Tecnico.ipynb)
+
+## Instrucciones para Ejecutar el Proyecto Localmente
+Si deseas ejecutar el proyecto en tu propia máquina:
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/vincesmandres/PruebaTecnica.git
+   ```
+
+2. Navega al directorio del proyecto:
+   ```bash
+   cd PruebaTecnica
+   ```
+
+3. Instala las dependencias:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Abre el notebook en Jupyter:
+   ```bash
+   jupyter notebook Reto_Tecnico.ipynb
+   ```
+
+## Estructura del Repositorio
+```
+.
+├── Reto_Tecnico.ipynb       # Notebook principal con el código del proyecto
+├── requirements.txt         # Archivo con las dependencias necesarias
+├── README.md                # Documentación del proyecto
+└── .ipynb_checkpoints       # Carpeta interna de Jupyter (se puede ignorar)
+```
 
 ## Contacto
 **Nombre del Desarrollador:** VinceS Mendoza Miakel Andres  
