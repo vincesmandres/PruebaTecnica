@@ -1,7 +1,7 @@
 ## Ejecutar en Binder
 Haz clic en el siguiente botón para ejecutar el notebook en un entorno interactivo:
 
-[![Colab](https://colab.research.google.com/drive/1rbkWj5TMPn8uOKGE3rqrFNfYtvBQU-fl?usp=sharing)
+[Colab Visualizable](https://colab.research.google.com/drive/1rbkWj5TMPn8uOKGE3rqrFNfYtvBQU-fl?usp=sharing)
 
 # Reto de Geología, Minería y Metalurgia
 
